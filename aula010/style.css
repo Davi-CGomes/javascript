@@ -23,7 +23,7 @@ div.envelope{
 
 }
 
-div#res, div#ressub{
+div#res, div#ressub, div#resmult, div#resdiv{
     margin-top: 20px;
 }
 

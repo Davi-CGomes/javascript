@@ -17,3 +17,28 @@ function subtrair(){
     var sub = s1 - s2
     ressub.innerHTML = `A subtração entre ${s1} e ${s2} é igual a <strong>${sub}</strong>`
 }
+
+function multiplicar(){
+    var tm1 = window.document.getElementById('txtm1')
+    var tm2 = window.document.getElementById('txtm2')
+    var resmult = window.document.getElementById('resmult')
+    var tm1 = Number(tm1.value)
+    var tm2 = Number(tm2.value)
+    var mult = tm1 * tm2
+    resmult.innerHTML = `A multiplicação entre ${tm1} e ${tm2} é igual a <strong>${mult}</strong>`
+}
+
+function dividir(){
+    var td1 = window.document.getElementById('txtd1')
+    var td2 = window.document.getElementById('txtd2')
+    var resdiv = window.document.getElementById('resdiv')
+    var td1 = Number(td1.value)
+    var td2 = Number(td2.value)
+    if (td2 != 0){
+        var div = td1/td2
+        resdiv.innerHTML = `A divisão entre ${td1} e ${td2} é igual a <strong>${div}</strong>`
+    }else{
+        resdiv.innerText = `Não é possivel dividir por zero!`
+    }
+    
+}
