@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRONTEIRA</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Insira sua Nacionalidade<input type="text" name="txtnac" id="txtnac">
+    <input type="submit" value="Enviar">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var nacionalidade = document.getElementById('txtnac')
+        if(nacionalidade == 'Brasil'){
+            res.innerHTML += `Você é brasileiro!`
+        } else {
+            res.innerHTML += `Você é estrangeiro!`
+        }
+
+    </script>
+</body>
+</html>
